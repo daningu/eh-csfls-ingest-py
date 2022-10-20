@@ -40,25 +40,6 @@
             }
         },
 
-        "activityLogHubName": {
-            "type": "string",
-            "defaultValue": "insights-activity-logs",
-            "metadata": {
-                "description": "Event Hub name containing activity logs"
-            }
-        },
-        "activityLogEventHubConsumerGroup": {
-            "type": "string",
-            "defaultValue": "$Default",
-            "metadata": {
-                "description": "Consumer group for the activity log Event Hub"
-            }
-        },
-        "activityLogDisabled": {
-            "type": "bool",
-            "defaultValue": false
-        },
-
         "aadLogHubName": {
             "type": "string",
             "defaultValue": "insights-logs-aad",
@@ -240,20 +221,7 @@
                             "name": "EVENTHUB_CONNECTION_STRING",
                             "value": "[parameters('eventHubConnectionString')]"
                         },
-                        {
-                            "name": "ACTIVITY_LOG_HUB_NAME",
-                            "value": "[parameters('activityLogHubName')]"
-                        },
-                        {
-                            "name": "ACTIVITY_LOG_CONSUMER_GROUP",
-                            "value": "[parameters('activityLogEventHubConsumerGroup')]"
-                        },
-
-                        {
-                            "name": "AzureWebJobs.activity-logs.Disabled",
-                            "value": "[parameters('activityLogDisabled')]"
-                        },
-
+                        
                         {
                             "name": "AAD_LOG_HUB_NAME",
                             "value": "[parameters('aadLogHubName')]"
