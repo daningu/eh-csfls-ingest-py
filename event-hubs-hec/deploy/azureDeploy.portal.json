@@ -508,27 +508,22 @@
 
             "activityLogHubName": "[steps('ehActivityLogs').ehActivityDropDown]",
             "activityLogEventHubConsumerGroup": "[steps('ehActivityLogs').ehActivityConsumerGroupDropDown]",
-            "activityLogSourceType": "[steps('ehActivityLogs').ehActivitySourcetype]",
             "activityLogDisabled": "[if(steps('ehActivityLogs').ehActivityEnable, false, true)]",
 
             "aadLogHubName": "[steps('ehAADLogs').ehAADSASection.ehAADSADropDown]",
             "aadLogEventHubConsumerGroup": "[steps('ehAADLogs').ehAADSASection.ehAADSAConsumerGroupDropDown]",
-            "aadLogSourceType": "[steps('ehAADLogs').ehAADSASection.ehAADSASourcetype]",
             "aadLogDisabled": "[if(steps('ehAADLogs').ehAADSASection.ehAADSAEnable, false, true)]",
 
             "aadNoninteractiveLogHubName": "[steps('ehAADLogs').ehAADNISection.ehAADNIDropDown]",
             "aadNoninteractiveLogEventHubConsumerGroup": "[steps('ehAADLogs').ehAADNISection.ehAADNIConsumerGroupDropDown]",
-            "aadNoninteractiveLogSourceType": "[steps('ehAADLogs').ehAADNISection.ehAADNISourcetype]",
             "aadNoninteractiveLogDisabled": "[if(steps('ehAADLogs').ehAADNISection.ehAADNIEnable, false, true)]",
 
             "aadServicePrincipalLogHubName": "[steps('ehAADLogs').ehAADSPSection.ehAADSPDropDown]",
             "aadServicePrincipalLogEventHubConsumerGroup": "[steps('ehAADLogs').ehAADSPSection.ehAADSPConsumerGroupDropDown]",
-            "aadServicePrincipalLogSourceType": "[steps('ehAADLogs').ehAADSPSection.ehAADSPSourcetype]",
             "aadServicePrincipalLogDisabled": "[if(steps('ehAADLogs').ehAADSPSection.ehAADSPEnable, false, true)]",
 
             "diagnosticsHubName": "[steps('ehDiagnosticsLogs').ehDiagnosticsDropDown]",
             "diagnosticsEventHubConsumerGroup": "[steps('ehDiagnosticsLogs').ehDiagnosticsConsumerGroupDropDown]",
-            "diagnosticsSourceType": "[steps('ehDiagnosticsLogs').ehDiagnosticsSourcetype]",
             "diagnosticsDisabled": "[if(steps('ehDiagnosticsLogs').ehDiagnosticsEnable, false, true)]",
 
             "tagsByResource": "[steps('tags').tagsByResource]"
