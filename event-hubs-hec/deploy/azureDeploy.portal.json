@@ -234,18 +234,6 @@
                             "required": "[steps('ehActivityLogs').ehActivityEnable]"
                         },
                         "visible": "[steps('ehActivityLogs').ehActivityEnable]"
-                    },
-                    {
-                        "name": "ehActivitySourcetype",
-                        "label": "Activity Log Sourcetype",
-                        "toolTip": "Splunk sourcetype for activity logs.",
-                        "type": "Microsoft.Common.TextBox",
-                        "defaultValue": "azure:activity:log",
-                        "placeholder": "azure:activity:log",
-                        "constraints": {
-                            "required": "[steps('ehActivityLogs').ehActivityEnable]"
-                        },
-                        "visible": "[steps('ehActivityLogs').ehActivityEnable]"
                     }
                 ]
             },
@@ -289,18 +277,6 @@
                                 "label": "AAD Sign-in and Audit Consumer Group",
                                 "constraints": {
                                     "allowedValues": "[map(steps('ehAADLogs').ehAADSASection.ehAADSAConsumerGroupApi.value, (item) => parse(concat('{\"label\":\"', item.name, '\",\"value\":\"', item.name, '\"}')))]",
-                                    "required": "[steps('ehAADLogs').ehAADSASection.ehAADSAEnable]"
-                                },
-                                "visible": "[steps('ehAADLogs').ehAADSASection.ehAADSAEnable]"
-                            },
-                            {
-                                "name": "ehAADSASourcetype",
-                                "label": "AAD Sign-in and Audit Sourcetype Base",
-                                "toolTip": "Splunk sourcetype base for Azure AD sign-in and activity data.",
-                                "type": "Microsoft.Common.TextBox",
-                                "defaultValue": "azure:aad",
-                                "placeholder": "azure:aad",
-                                "constraints": {
                                     "required": "[steps('ehAADLogs').ehAADSASection.ehAADSAEnable]"
                                 },
                                 "visible": "[steps('ehAADLogs').ehAADSASection.ehAADSAEnable]"
@@ -398,18 +374,6 @@
                                     "required": "[steps('ehAADLogs').ehAADSPSection.ehAADSPEnable]"
                                 },
                                 "visible": "[steps('ehAADLogs').ehAADSPSection.ehAADSPEnable]"
-                            },
-                            {
-                                "name": "ehAADSPSourcetype",
-                                "label": "AAD Service Principal Sign-In Sourcetype",
-                                "toolTip": "Splunk sourcetype for Azure AD service principal sign-in data.",
-                                "type": "Microsoft.Common.TextBox",
-                                "defaultValue": "azure:aad:signin:serviceprincipal",
-                                "placeholder": "azure:aad:signin:serviceprincipal",
-                                "constraints": {
-                                    "required": "[steps('ehAADLogs').ehAADSPSection.ehAADSPEnable]"
-                                },
-                                "visible": "[steps('ehAADLogs').ehAADSPSection.ehAADSPEnable]"
                             }
                         ]
                     }
@@ -450,18 +414,6 @@
                         "label": "Diagnostics Log Consumer Group",
                         "constraints": {
                             "allowedValues": "[map(steps('ehDiagnosticsLogs').ehDiagnosticsConsumerGroupApi.value, (item) => parse(concat('{\"label\":\"', item.name, '\",\"value\":\"', item.name, '\"}')))]",
-                            "required": "[steps('ehDiagnosticsLogs').ehDiagnosticsEnable]"
-                        },
-                        "visible": "[steps('ehDiagnosticsLogs').ehDiagnosticsEnable]"
-                    },
-                    {
-                        "name": "ehDiagnosticsSourcetype",
-                        "label": "Diagnostics Log Default Sourcetype",
-                        "toolTip": "Splunk default sourcetype for diagnostics logs.",
-                        "type": "Microsoft.Common.TextBox",
-                        "defaultValue": "azure:diagnostics",
-                        "placeholder": "azure:diagnostics",
-                        "constraints": {
                             "required": "[steps('ehDiagnosticsLogs').ehDiagnosticsEnable]"
                         },
                         "visible": "[steps('ehDiagnosticsLogs').ehDiagnosticsEnable]"
