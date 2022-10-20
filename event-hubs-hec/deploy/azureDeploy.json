@@ -54,13 +54,6 @@
                 "description": "Consumer group for the activity log Event Hub"
             }
         },
-        "activityLogSourceType": {
-            "type": "string",
-            "defaultValue": "azure:activity:log",
-            "metadata": {
-                "description": "Splunk source type for the activity log Event Hub"
-            }
-        },
         "activityLogDisabled": {
             "type": "bool",
             "defaultValue": false
@@ -78,13 +71,6 @@
             "defaultValue": "$Default",
             "metadata": {
                 "description": "Consumer group for the Azure Active Directory log Event Hub"
-            }
-        },
-        "aadLogSourceType": {
-            "type": "string",
-            "defaultValue": "azure:aad",
-            "metadata": {
-                "description": "Splunk sourcetype base for the Azure Active Directory Sign-in and Audit log Event Hub"
             }
         },
         "aadLogDisabled": {
@@ -106,13 +92,6 @@
                 "description": "Consumer group for the Azure Active Directory non-interactive log Event Hub"
             }
         },
-        "aadNoninteractiveLogSourceType": {
-            "type": "string",
-            "defaultValue": "azure:aad:signin:noninteractive",
-            "metadata": {
-                "description": "Splunk sourcetype base for the Azure Active Directory non-interactive log Event Hub"
-            }
-        },
         "aadNoninteractiveLogDisabled": {
             "type": "bool",
             "defaultValue": true
@@ -132,13 +111,6 @@
                 "description": "Consumer group for the Azure Active Directory Service Principal log Event Hub"
             }
         },
-        "aadServicePrincipalLogSourceType": {
-            "type": "string",
-            "defaultValue": "azure:aad:signin:serviceprincipal",
-            "metadata": {
-                "description": "Splunk sourcetype base for the Azure Active Directory Service Principal log Event Hub"
-            }
-        },
         "aadServicePrincipalLogDisabled": {
             "type": "bool",
             "defaultValue": true
@@ -156,13 +128,6 @@
             "defaultValue": "$Default",
             "metadata": {
                 "description": "Consumer group for the diagnostics Event Hub"
-            }
-        },
-        "diagnosticsSourceType": {
-            "type": "string",
-            "defaultValue": "azure:diagnostics",
-            "metadata": {
-                "description": "Splunk sourcetype default for the diagnostics Event Hub"
             }
         },
         "diagnosticsDisabled": {
@@ -283,10 +248,7 @@
                             "name": "ACTIVITY_LOG_CONSUMER_GROUP",
                             "value": "[parameters('activityLogEventHubConsumerGroup')]"
                         },
-                        {
-                            "name": "ACTIVITY_LOG_SOURCETYPE",
-                            "value": "[parameters('activityLogSourceType')]"
-                        },
+
                         {
                             "name": "AzureWebJobs.activity-logs.Disabled",
                             "value": "[parameters('activityLogDisabled')]"
@@ -300,10 +262,7 @@
                             "name": "AAD_LOG_CONSUMER_GROUP",
                             "value": "[parameters('aadLogEventHubConsumerGroup')]"
                         },
-                        {
-                            "name": "AAD_LOG_SOURCETYPE",
-                            "value": "[parameters('aadLogSourceType')]"
-                        },
+
                         {
                             "name": "AzureWebJobs.aad-logs.Disabled",
                             "value": "[parameters('aadLogDisabled')]"
@@ -317,10 +276,7 @@
                             "name": "AAD_NON_INTERACTIVE_SIGNIN_LOG_CONSUMER_GROUP",
                             "value": "[parameters('aadNoninteractiveLogEventHubConsumerGroup')]"
                         },
-                        {
-                            "name": "AAD_NON_INTERACTIVE_SIGNIN_LOG_SOURCETYPE",
-                            "value": "[parameters('aadNoninteractiveLogSourceType')]"
-                        },
+
                         {
                             "name": "AzureWebJobs.aad-signin-logs-non-interactive.Disabled",
                             "value": "[parameters('aadNoninteractiveLogDisabled')]"
@@ -334,10 +290,7 @@
                             "name": "AAD_SERVICE_PRINCIPAL_SIGNIN_LOG_CONSUMER_GROUP",
                             "value": "[parameters('aadServicePrincipalLogEventHubConsumerGroup')]"
                         },
-                        {
-                            "name": "AAD_SERVICE_PRINCIPAL_SIGNIN_LOG_SOURCETYPE",
-                            "value": "[parameters('aadServicePrincipalLogSourceType')]"
-                        },
+                        
                         {
                             "name": "AzureWebJobs.aad-signin-logs-service-principal.Disabled",
                             "value": "[parameters('aadServicePrincipalLogDisabled')]"
