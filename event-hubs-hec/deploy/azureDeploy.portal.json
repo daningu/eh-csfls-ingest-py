@@ -500,8 +500,8 @@
             "appName": "[steps('basics').appName]",
 
             "eventHubConnectionString": "[steps('appSettings').ehPolicyKeyApi.primaryConnectionString]",
-            "SplunkEndpoint": "[steps('appSettings').LogScaleSection.LogScaleHECURL]",
-            "IngestToken": "[steps('appSettings').LogScaleSection.LogScaleIngestToken]",
+            "LogScaleHECURL": "[steps('appSettings').LogScaleSection.LogScaleHECURL]",
+            "LogScaleIngestToken": "[steps('appSettings').LogScaleSection.LogScaleIngestToken]",
             "githubRepoURL": "[steps('appSettings').repoSection.repoURL]",
             "githubRepoBranch": "[steps('appSettings').repoSection.repoBranch]",
             "githubRepoProject": "[steps('appSettings').repoSection.repoProject]",
