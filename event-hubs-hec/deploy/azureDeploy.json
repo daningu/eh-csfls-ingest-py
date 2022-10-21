@@ -270,7 +270,7 @@
 
                         {
                             "name": "LogScaleIngestToken",
-                            "value": "[parameters('SplunkToken')]"
+                            "value": "[parameters('LogScaleIngestToken')]"
                         },
                         {
                             "name": "LOGSCALE_URL",
