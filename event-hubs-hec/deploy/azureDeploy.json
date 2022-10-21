@@ -269,12 +269,12 @@
                         },
 
                         {
-                            "name": "INGEST_TOKEN",
+                            "name": "LogScaleIngestToken",
                             "value": "[parameters('SplunkToken')]"
                         },
                         {
                             "name": "LOGSCALE_URL",
-                            "value": "[parameters('SplunkEndpoint')]"
+                            "value": "[parameters('LogScaleHECURL')]"
                         },
                         {
                             "name": "BLOB_CONNECTION_STRING",
