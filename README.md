@@ -1,7 +1,7 @@
 # Azure Functions for Sending Event Hub data to a Splunk HTTP Event Collector
 Events arriving on an Azure Event Hub can trigger serverless Azure Functions.  Azure Functions can further process the raw events in near real-time.
 
-<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2Fdaningu%2Feh%2Dcsfls%2Dingest%2Dpy%2Fmain%2Fevent%2Dhubs%2Dhec%2Fdeploy%2FazureDeploy%2Ejson/createUIDefinitionUri/https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2Fdaningu%2Feh%2Dcsfls%2Dingest%2Dpy%2Fmain%2Fevent%2Dhubs%2Dhec%2Fdeploy%2FazureDeploy%2Eportal%2Ejson" target="_blank">
+<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2Fdaningu%2Feh%2Dcsfls%2Dingest%2Dpy%2Fmain%2Fdeploy%2FazureDeploy%2Ejson/createUIDefinitionUri/https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2Fdaningu%2Feh%2Dcsfls%2Dingest%2Dpy%2Fmain%2Fdeploy%2FazureDeploy%2Eportal%2Ejson" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
