@@ -13,6 +13,7 @@
                 "type": "Microsoft.Common.TextBox",
                 "toolTip": "The name of the function app that you wish to create.",
                 "visible": true,
+                "defaultValue": "LogScaleAAD",
                 "constraints": {
                     "required": true
                 }
